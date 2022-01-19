@@ -51,7 +51,7 @@ void Verify(const v8::FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = Isolate::GetCurrent();
   HandleScope scope(isolate);
 
-  // Default to Beam Hash III
+  // Default to Beam Hash I
   unsigned int PoW = 0;
 
   if (args.Length() < 3) {
