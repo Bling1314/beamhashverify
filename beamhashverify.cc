@@ -52,7 +52,7 @@ void Verify(const v8::FunctionCallbackInfo<Value>& args) {
   HandleScope scope(isolate);
 
   // Default to Beam Hash III
-  unsigned int PoW = 2;
+  unsigned int PoW = 0;
 
   if (args.Length() < 3) {
   isolate->ThrowException(Exception::TypeError(
